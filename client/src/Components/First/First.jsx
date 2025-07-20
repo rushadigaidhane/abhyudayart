@@ -2,16 +2,9 @@ import React from "react";
 import Header from "../Header";
 import ReactDOM from 'react-dom/client';
 import "./First.css";
-import App from './App';
-import Footer from "../Footer";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import Footer from "../Footer";
 
 const First = () => {
   return (
@@ -23,7 +16,7 @@ const First = () => {
         <div className="hero-content">
           <h1>Abhyuday Art Classes</h1>
           <p>Unleash your creativity with professional art training</p>
-          <link to="/Classes">
+          <Link to="/Classes">
             <button
               style={{
                 marginTop: "20px",
@@ -39,17 +32,18 @@ const First = () => {
             >
               Explore Classes
             </button>
-          </link>
+          </Link>
         </div>
       </section>
 
       {/* Second Section */}
       <div className="second">
-        <h1 style={{ fontSize: "50px" }}>Mastering the Basics</h1>
+        <h1 style={{ fontSize: "50px", textAlign: "center"}}>Mastering the Basics</h1>
         <p
           style={{
             fontSize: "22px",
             textAlign: "center",
+            justifyItems: "center",
             maxWidth: "780px"
           }}
         >
@@ -67,12 +61,12 @@ const First = () => {
       <div id="third">
         {[
           {
-            img: "drawing.png",
+            img: "/drawing.png",
             title: "Creative Drawing",
             desc: "Our drawing classes introduce children and beginners to the basics of art—lines, shapes, forms, and imagination. We encourage artistic freedom while building a strong foundation in visual storytelling."
           },
           {
-            img: "sketch.png",
+            img: "/sketch.png",
             title: "Expressive Sketching",
             desc: "Sketching classes focus on shading, light, texture, and detailing. Students learn to sketch still life, nature, and human figures using techniques that enhance observation and realism."
           },
@@ -82,7 +76,7 @@ const First = () => {
             desc: "Our mehendi classes teach stunning Indian and Arabic designs perfect for festivals and events. Learners develop control, creativity, and confidence in creating intricate patterns on hands and paper."
           },
           {
-            img: "rangoli.png",
+            img: "/rangoli.png",
             title: "Vibrant Rangoli Designs",
             desc: "Rangoli sessions offer both traditional and modern patterns. Students learn symmetry, color harmony, and festive design elements while enjoying a creative and joyful experience."
           }
@@ -117,11 +111,12 @@ const First = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+           
           }}
         >
           <h1 style={{ fontSize: "50px", color: "white" }}>Creative Corner</h1>
-          <img src="underline.png" alt="" width="300px" />
+          <img src="/underline.png" alt="" width="300px" />
           <br />
           <p
             style={{
@@ -161,7 +156,8 @@ const First = () => {
               design patterns, strokes, freehand drawing, and coloring. Our structured and supportive teaching style
               ensures that even young learners feel confident and prepared for the exam.
             </p>
-            <link to="elementary-syllabus.pdf" target="_blank">
+            <a href="" target="_blank" rel="noopener noreferrer">
+
               <button
                 style={{
                   marginTop: "10px",
@@ -175,7 +171,7 @@ const First = () => {
               >
                 View Syllabus
               </button>
-            </link>
+            </a>
           </div>
 
           {/* Intermediate */}
@@ -192,7 +188,7 @@ const First = () => {
               figures, design, and calligraphy. With personalized attention and regular mock tests, we help students
               excel with confidence and creativity.
             </p>
-            <link to="intermediate-syllabus.pdf" target="_blank">
+            <a href="" target="_blank" rel="noopener noreferrer">
               <button
                 style={{
                   marginTop: "10px",
@@ -206,7 +202,7 @@ const First = () => {
               >
                 View Syllabus
               </button>
-            </link>
+            </a>
           </div>
         </div>
       </div>
@@ -237,16 +233,17 @@ const First = () => {
 
         <div id="grid">
           {[
-            "vr-p1.jpg",
-            "vr-p2.jpg",
-            "vr-p3.jpg",
-            "vr-4.jpg",
-            "5.png",
-            "sketch.png",
-            "7.jpg",
-            "hr-p1.jpg"
+            "/vr-p1.jpg",
+            "/vr-p2.jpg",
+            "/vr-p3.jpg",
+            "/7.jpg",
+            "/vr-4.jpg",
+            "/5.png",
+            "/sketch.png",
+            
+            "/hr-p1.jpg"
           ].map((src, index) => (
-            <img key={index} src={src} alt="" width="330px" />
+            <img key={index} src={src} alt={`Artwork ${index + 1}`} width="330px" />
           ))}
         </div>
       </div>

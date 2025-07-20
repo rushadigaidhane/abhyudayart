@@ -2,24 +2,28 @@ import React from "react";
 import './Header.css'
 import { Link } from 'react-router-dom';
 
+import searchlogo from '../assets/searchlogo.png';
+import menulogo from '../assets/menulogo.png';
+
+
 const Header =()=>{
     return(
         <>
         <div id="parent"  >
     <header>
-        <div style="width: 40%">
+        <div style={{width: "40%"}}>
             <img src="logo2.png" width="150"/>
         </div>
 
         <div id="header-second">
-            <link to="/index">Home</link>
-            <link to="/About">About</link>
-            <link to="/Classes">Classes</link>
-            <link to="/Work">Art Work</link>
-            <link to="/Contact">Contact</link>
+            <Link to="/">Home</Link>
+            <Link to="/About">About</Link>
+            <Link to="/CLasses">Classes</Link>
+            <Link to="/Work">Art Work</Link>
+            <Link to="/Contact">Contact</Link>
          
-            <img src="/search-logo.png" width="30"/>
-            <img src="/menu-logo.png" width="30"/>
+            <img src={searchlogo.png} width="30"/>
+            <img src={menulogo.png} width="30"/>
         </div>
         
     </header>
@@ -28,4 +32,4 @@ const Header =()=>{
 
     );
 };
-export default Headee;
+export default Header;
