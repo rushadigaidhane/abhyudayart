@@ -19,7 +19,7 @@ a {
     justify-content: space-between;
 }
 #parent {
-    background-image: url(bg-new.jpeg);
+    background-image: url(/bg-new.jpeg);
    
     background-size: cover;
     background-repeat: no-repeat;
