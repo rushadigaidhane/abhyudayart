@@ -17,14 +17,7 @@ const First = () => {
       {/* Second Section */}
       <div className="second">
         <h1 style={{ fontSize: "50px", textAlign: "center"}}>Mastering the Basics</h1>
-        <p
-          style={{
-            fontSize: "22px",
-            textAlign: "center",
-            justifyItems: "center",
-            maxWidth: "780px"
-          }}
-        >
+        <p style={{ fontSize: "22px", textAlign: "center", maxWidth: "650px", margin: "0 auto" }}>
           We provide expert coaching for government-certified Elementary and Intermediate Drawing Grade Exams. With a strong
           foundation in lines, shapes, shading, and creativity, students are guided step-by-step to score high and develop
           confidence in their artistic journey.
