@@ -107,15 +107,15 @@
     }
 
 .hero-content {
-    background-color: #6b6c7078;
+    /* background-color: #6b6c7038; */
+    /* background-image: url(/bg-new.jpeg); */ /* Remove this line */
+    background-size: cover;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
+    z-index: 1;
 }
 
 .hero-content h1 {

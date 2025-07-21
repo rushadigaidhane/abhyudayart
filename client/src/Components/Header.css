@@ -3,6 +3,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgba(255,255,255, 0.4);
 }
 
 a {
@@ -10,6 +11,7 @@ a {
     font-size: 22px;
     color: white;
     text-shadow: 1px 1px 5px black;
+        
 }
 
 #header-second {
@@ -17,14 +19,32 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
+.nav-btn{
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    border-radius: 7px;
+}
+.nav-btn:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
 #parent {
     background-image: url(/bg-new.jpeg);
-   
+    /* background-color: rgba(0,0,0,0.7); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
 
+.hero-content {
+    position: relative;
+    z-index: 5;
+    padding-top: 80px; /* push it down if needed */
+    text-align: center;
 }
